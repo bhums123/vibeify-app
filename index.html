@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thapa Music Player</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main_div">
+  <div class="music_container">
+
+    <!-- SEARCH -->
+    <input type="text" id="searchBar" placeholder="Search song...">
+
+    <!-- SONG LIST -->
+    <ul id="songList"></ul>
+    <h2 id="title"></h2>
+    <h3 id="artist"></h3>
+
+<div class="app-logo">
+ 
+  <h1 class="app-name">Vibeify App</h1>
+</div>
+
+    <div class="img_container">
+      <img src="images/thapa-1.jpg" id="cover">
+    </div>
+
+    <!-- AUDIO (ONLY ONE) -->
+    <audio id="audio"></audio>
+
+    <!-- CONTROLS -->
+    <div class="music_controls">
+      <i class="fa-solid fa-backward" id="prev"></i>
+      <i class="fa-solid fa-play main_button" id="play"></i>
+      <i class="fa-solid fa-forward" id="next"></i>
+    </div>
+
+    <!-- VOLUME -->
+    <div class="volume-control">
+      <i class="fa-solid fa-volume-high"></i>
+      <!-- volume up and down k liye hai -->
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.7">
+    </div>
+<div class="volume-container" id="volumeControl">
+  <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+  <input
+    type="range"
+    min="0"
+    max="1"
+    step="0.01"
+    value="1"
+    id="volumeSlider"
+  />
+</div>
+
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
